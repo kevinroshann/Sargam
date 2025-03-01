@@ -1,7 +1,7 @@
 import { useState, useRef ,useEffect} from "react";
 import { TiLocationArrow } from "react-icons/ti";
 
-import SmoothTextAnimation from "./Gooy";
+import ResponsivePiano from "./Piano";
 export const BentoTilt = ({ children, className = "" }) => {
   const [transformStyle, setTransformStyle] = useState("");
   const itemRef = useRef(null);
@@ -143,7 +143,7 @@ return(
             className="size-full object-cover object-center"
           />
       </BentoTilt>
-{/* <SmoothTextAnimation/> */}
+
       <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
         <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
           <BentoCard
@@ -164,10 +164,11 @@ return(
       className={`${fonts[currentFontIndex]} text-[5vw] font-bold text-center leading-none
       transition-all duration-500 text-white animate-morph whitespace-nowrap text-outline`}
     >
-      SARGAM 2025
+            SARGAM 2025
     </h1>
   </div>
 </BentoTilt>
+
 
 
         <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
@@ -184,25 +185,9 @@ return(
         </BentoTilt>
 
      
-        <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-2 md:row-span-1">
-          <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
-            <h1 className="bento-title special-font max-w-64 text-black">
-              M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
-            </h1>
-
-            <TiLocationArrow className="m-5 scale-[5] self-end" />
-          </div>
-        </BentoTilt>
-
-        {/* <BentoTilt className="bento-tilt_2">
-          <video
-            src="videos/feature-5.mp4"
-            loop
-            muted
-            autoPlay
-            className="size-full object-cover object-center"
-          />
-        </BentoTilt> */}
+       
+            <ResponsivePiano/>
+         
       </div>
      
     </div>
